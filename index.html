@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Présidentiel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+
+        .profile-photo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #00baff;
+            box-shadow: 0 0 10px rgba(0, 186, 255, 0.5);
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-text {
+            font-size: 1.4rem;
+            color: #00baff;
+            margin-bottom: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #00baff;
+            width: 0;
+            animation: typing 6s steps(60, end) forwards;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-box h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .contact-button {
+            margin-top: 30px;
+            display: inline-block;
+            background-color: #00baff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #008ecc;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #aaaaaa;
+        }
+
+        @media (max-width: 600px) {
+            .contact-box {
+                padding: 25px;
+            }
+
+            .contact-box h1 {
+                font-size: 1.6rem;
+            }
+
+            .header-text {
+                font-size: 1.1rem;
+            }
+
+            .profile-photo {
+                width: 50px;
+                height: 50px;
+                top: 15px;
+                left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 👤 PHOTO DE PROFIL -->
+    <div class="profile-photo">
+        <img src="Fils lasaba.jpg" alt="Photo de profil">
+    </div>
+
+    <!-- ✨ TEXTE ANIMÉ -->
+    <div class="header-text">📬 Bienvenue sur ma page de contact officielle</div>
+
+    <!-- 💬 BOÎTE DE CONTACT -->
+    <div class="contact-box">
+        <h1>Un mot, un message ?</h1>
+        <p>Je suis à votre écoute. Cliquez ci-dessous pour m’écrire directement par Gmail. Je réponds dans les plus brefs délais.</p>
+        <a class="contact-button" href="mailto:tshiraclasaba@gmail.com?subject=Contact%20depuis%20le%20site%20officiel">M’écrire maintenant</a>
+    </div>
+
+    <!-- © PIED DE PAGE -->
+    <footer>
+        &copy; 2025 - Page de contact officielle
+    </footer>
+
+</body>
+</html>
